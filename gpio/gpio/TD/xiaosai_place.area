@@ -1,0 +1,68 @@
+standard
+***Report Model: CortexM0_SoC***
+
+IO Statistics
+#IO                        30
+  #input                    4
+  #output                   9
+  #inout                   17
+
+Utilization Statistics
+#lut                     5445   out of  19600   27.78%
+#reg                     1409   out of  19600    7.19%
+#le                      5491
+  #lut only              4082   out of   5491   74.34%
+  #reg only                46   out of   5491    0.84%
+  #lut&reg               1363   out of   5491   24.82%
+#dsp                        3   out of     29   10.34%
+#bram                      32   out of     64   50.00%
+  #bram9k                  32
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       30   out of    188   15.96%
+  #ireg                     8
+  #oreg                     0
+  #treg                     0
+#pll                        0   out of      4    0.00%
+
+
+Detailed IO Report
+
+    Name       Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+    RSTn         INPUT         A9        LVTTL33           N/A          PULLUP      NONE    
+     RXD         INPUT        F12        LVCMOS33          N/A          PULLUP      NONE    
+    SWCLK        INPUT         R2        LVTTL33           N/A          PULLUP      NONE    
+     clk         INPUT         R7        LVTTL33           N/A          PULLUP      NONE    
+   LED[7]       OUTPUT        B14        LVTTL33            8            NONE       NONE    
+   LED[6]       OUTPUT        B15        LVTTL33            8            NONE       NONE    
+   LED[5]       OUTPUT        B16        LVTTL33            8            NONE       NONE    
+   LED[4]       OUTPUT        C15        LVTTL33            8            NONE       NONE    
+   LED[3]       OUTPUT        C16        LVTTL33            8            NONE       NONE    
+   LED[2]       OUTPUT        E13        LVTTL33            8            NONE       NONE    
+   LED[1]       OUTPUT        E16        LVTTL33            8            NONE       NONE    
+   LED[0]       OUTPUT        F16        LVTTL33            8            NONE       NONE    
+     TXD        OUTPUT        D12        LVCMOS33           8            NONE       NONE    
+    SWDIO        INOUT         P2        LVTTL33            8           PULLUP      NONE    
+  ioPin0[7]      INOUT        H16        LVCMOS25           8            N/A        IREG    
+  ioPin0[6]      INOUT        A10        LVTTL33            8           PULLUP      IREG    
+  ioPin0[5]      INOUT        B10        LVTTL33            8           PULLUP      IREG    
+  ioPin0[4]      INOUT        A11        LVTTL33            8           PULLUP      IREG    
+  ioPin0[3]      INOUT        A12        LVTTL33            8           PULLUP      IREG    
+  ioPin0[2]      INOUT        B12        LVTTL33            8           PULLUP      IREG    
+  ioPin0[1]      INOUT        A13        LVTTL33            8           PULLUP      IREG    
+  ioPin0[0]      INOUT        A14        LVTTL33            8           PULLUP      IREG    
+  ioPin1[7]      INOUT        D14        LVCMOS25           8            N/A        NONE    
+  ioPin1[6]      INOUT         N5        LVCMOS33           8            N/A        NONE    
+  ioPin1[5]      INOUT        R14        LVCMOS33           8            N/A        NONE    
+  ioPin1[4]      INOUT        K15        LVCMOS25           8            N/A        NONE    
+  ioPin1[3]      INOUT         E1        LVCMOS33           8            N/A        NONE    
+  ioPin1[2]      INOUT         A2        LVCMOS33           8            N/A        NONE    
+  ioPin1[1]      INOUT         B2        LVCMOS33           8            N/A        NONE    
+  ioPin1[0]      INOUT         F2        LVCMOS33           8            N/A        NONE    
+
+Report Hierarchy Area:
++----------------------------------------------------------------------+
+|Instance |Module       |le    |lut    |ripple |seq    |bram   |dsp    |
++----------------------------------------------------------------------+
+|top      |CortexM0_SoC |5491  |5368   |77     |1417   |32     |3      |
++----------------------------------------------------------------------+
